@@ -1,16 +1,13 @@
 import React from 'react'
 import CreditCard from './CreditCard'
 import TransactionCard from './TransactionCard'
-import { BsPlus } from 'react-icons/bs'
+import LogedUser from './LogedUser'
 
 export default function () {
     return (
         <div>
-            <div className='flex justify-between items-center my-2 p-3'>
-                <p className='text-xl uppercase font-bold tracking-widest text-white'>Welcome, Infas</p>
-                <img src='../img/user.png' className='h-10 w-10 rounded-full ring-offset-2 ring-2 p-1' />
-            </div>
-            <div className='p-3'>
+            <LogedUser />
+            <div className='my-5'>
                 <CreditCard />
             </div>
             <div className='p-3 bg-white rounded-lg my-5'>
